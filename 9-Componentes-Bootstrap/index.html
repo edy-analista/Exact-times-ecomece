@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes </title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+<!--css do projeto-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!--accordion-->
+  <div class="col-4 m-4">
+    <h2>Acordion</h2>
+    <div class="accordion" id="accordion">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" taype="button" data-bs-toggle="collapse"      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                item-1
+                </button>
+       </h2>
+       <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"data-bs-parent="#accordion">
+        <div class="accordion-body">
+            <p>Este é o item da sua relação</p>
+        </div>
+       </div>
+    </div>
+  </div>
+  <div class="col-6 m-4">
+        <div class="alert alert-primary" role="alert">
+            Esta é uma mensagem comun do ssistema
+        </div>
+        <div class="alert alert-success" role="alert">
+            Esta é uma mensagem comun do ssistema
+        </div>
+        <div class="alert alert-danger  " role="alert">
+            Esta é uma mensagem comun do ssistema
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+            nao encontramos o seu pedido faça sua solicitação <a href="" class="alert-link">clicando aqui</a>
+        </div>
+
+        <div class="alert alert-warning fade show">
+            <strong>Ops!</strong>
+            aconteceu algo errado de errado com o sistema favor recarregar  
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+
+            </button>
+        </div>
+    
+  </div>
+ <!--Dropdown-->
+  <div class="container mb-4">
+    <div class="dropdown mb-4">
+        <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Clique a qui</a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdown">
+           <li><a href="#" class="dropdown-item">Item-1</a></li>
+           <li><a href="#" class="dropdown-item">Item-2</a></li>
+           <li><a href="#" class="dropdown-item">Item-3</a></li>
+        </ul>
+    </div>
+  </div>
+
+   
+
+</body>
